@@ -1,0 +1,162 @@
+/*Logos*/
+#logo-menu{
+	width: 70%;
+	height: 20%;
+}
+
+#logo-footer{
+	width: 22%;
+	margin-top: 3%;
+}
+
+/*Sonorización*/
+.img-sonz-top{
+	width: 70%;
+}
+
+.img-sonz-bot{
+	width: 46%;
+}
+
+/*Iluminación*/
+.img-ilum{
+	width: 80%;
+	height: 70%;
+}
+
+.img-ilum:hover{
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+	box-shadow: 10px 10px 5px #888888;
+  }
+
+/*Eventos*/
+.eventos-img{
+	width: 100%;
+}
+
+.txt-just{
+	text-align: justify;
+}
+
+/*Estructuras*/
+.icono-des{
+	color: #efb810;
+	font-size: 4em;
+}
+
+.gal-img{
+	width: 100%;
+}
+
+.gal{
+	height: 85%;
+}
+
+/*TODO*/
+.presupuesto{
+	border: 1px black solid;
+}
+
+.center{
+	margin: 20px auto 0 auto;
+	display: block;
+}
+
+/*Contacto*/
+.contacto{
+	margin-top: 10%;
+}
+
+.icono-contacto{
+	font-size: 2.5em;
+}
+
+/*Footer*/
+.footer{
+	background-color: #343a40;
+}
+
+.min-footer{ /*especial*/
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#copyright{
+	color: white;
+	margin-top: 1%;
+    margin-bottom: 0px;
+}
+
+#redes{
+	margin-top: 3%;
+	float: right;
+}
+
+.icono-footer{
+	color: white;
+	font-size: 2em;
+}
+
+.error{
+    background-color: #BC1010;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+}
+.error:before{ /* Este es un truco para crear una flechita */
+    content: '';
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #BC1010;
+    border-left: 8px solid transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}
+
+@media (max-width: 768px) {
+
+	.img-sonz-bot{
+		width: 70%;
+	}
+
+	.outWidth{
+		width: 50% !important;
+	}
+	
+	.icono-footer{
+		font-size: 1.4em;
+	}
+
+	.prueba{
+		width: 35% !important;
+	}
+	
+	.contacto{
+		margin-top:5%; 
+	}
+}
+
+@media (max-width: 576px) {
+
+	body{
+		font-size: 70%;
+	}
+
+	.icono-contacto{
+		font-size: 200%;
+	}
+
+	.icono-footer{
+		font-size: 150%;
+	}
+}

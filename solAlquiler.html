@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Viewport/UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <!-- CSS -->
+    <!-- Bootstrap core -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Personal Design -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Formulario Alquiler</title>
+</head>
+
+<body>
+    <!-- Menu con Logotipo -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">
+            <img src="img/logo.png" id="logo-menu" title="Logo-Empresa" alt="LogoGrande">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="sonorizacion.html" class="nav-link">Sonorización</a>
+                </li>
+                <li class="nav-item">
+                    <a href="iluminacion.html" class="nav-link">Iluminación</a>
+                </li>
+                <li class="nav-item">
+                    <a href="eventos.html" class="nav-link">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="estructuras.html" class="nav-link">Estructuras</a>
+                </li>
+                <li class="nav-item">
+                    <a href="alquiler.html" class="nav-link">Alquiler</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Formulario de alquiler Pack Fiesta -->
+    <div class="container mt-5">
+        <h2>Alquilar Pack Fiesta</h2>
+        <div class="row">
+            <div class="col-md-8 order-md-1">
+                <h4 class="mb-3">Datos de facturacion</h4>
+                <form action="" class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" id="nombre" class="form-control" name="nombre" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="apellidos">Apellidos *</label>
+                            <input id="apellidos" class="form-control" name="apellidos" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="email">Email *</label>
+                            <input id="email" class="form-control" name="email" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email">Repetir Email *</label>
+                            <input id="email2" class="form-control" name="email" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="montaje">Dirección de montaje: *</label>
+                        <textarea id="montaje" class="form-control" rows="2" name="observaciones" required></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="fechaMontaje">Fecha de montaje: *</label>
+                            <input type="date" id="montaje" class="form-control" name="montaje" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="fechaRecogida">Fecha de recogida: *</label>
+                            <input type="date" id="recogida" class="form-control" name="recogida" required>
+                        </div>
+                    </div>
+                    <!-- Seleccionar pack fiesta -->
+                    <fieldset class="form-group mt-2">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Elige tu pack fiesta *</legend>
+                            <div class="col-sm-10" id="productos">
+                                <div class="form-check">
+                                    <input type="radio" name="packFiesta" id="bronce" value="bronce" class="form-check-input">
+                                    <label for="bronce" class="form-check-label">Bronce&nbsp&nbsp&nbsp&nbsp99€</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="packFiesta" id="plata" value="plata" class="form-check-input">
+                                    <label for="plata" class="form-check-label">Plata&nbsp&nbsp&nbsp&nbsp199€</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" name="packFiesta" id="oro" value="oro" class="form-check-input">
+                                    <label for="oro" class="form-check-label">Oro&nbsp&nbsp&nbsp&nbsp380€</label>
+                                </div>
+                            </div>
+                            <input type="submit" class="btn btn-lg btn-outline-warning alCarro mt-3" value="Añadir al carro">
+                        </div>
+                    </fieldset>
+
+                    <div class="modal fade" id="pagoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Selecciona metodo de pago</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="pago">
+                                        <fieldset class="form-group mt-2">
+                                            <div class="row">
+                                                <div class="col-sm-10">
+                                                    <select name="metodoPago" id="metodoPago">
+                                                        <option value="nada">--Elige opcion--</option>
+                                                        <option value="tarjeta">Tarjeta de credito</option>
+                                                        <option value="paypal">Paypal</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <!-- Tarjeta -->
+                                        <div class="row formulario" id="tarjeta">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="nombreTarjeta">Nombre del titular</label>
+                                                    <input type="text" class="form-control" id="nombreTarjeta"
+                                                        placeholder required>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="numeroTarjeta">Numero Tarjeta</label>
+                                                    <input type="text" class="form-control" id="numeroTarjeta"
+                                                        placeholder required>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="caducidadTarjeta">Fecha Expiracion</label>
+                                                    <input type="text" class="form-control" id="caducidadTarjeta"
+                                                        placeholder required>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="cvvTarjeta">CVV</label>
+                                                    <input type="text" class="form-control" id="cvvTarjeta" placeholder
+                                                        required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Paypal -->
+                                        <div class="row formulario mt-3" id="paypal" style="display:none;">
+                                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"
+                                                class="mb-3">
+                                                <input type="hidden" name="cmd" value="_s-xclick">
+                                                <input type="hidden" name="hosted_button_id" value="9GNMSCT9C3MWS">
+                                                <table>
+                                                    <tr>
+                                                        <td><input type="hidden" name="on0" value="Pack Fiesta">Pack
+                                                            Fiesta</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><select name="os0" id="opcionesPaypal">
+                                                                <option value="Pack Bronce">Pack Bronce €99,00 EUR</option>
+                                                                <option value="Pack Plata">Pack Plata €199,00 EUR</option>
+                                                                <option value="Pack Oro">Pack Oro €389,00 EUR</option>
+                                                            </select> </td>
+                                                    </tr>
+                                                </table>
+                                                <br>
+                                                <input type="hidden" name="currency_code" value="EUR">
+                                                <input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynowCC_LG.gif"
+                                                    border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+                                                <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif"
+                                                    width="1" height="1" href="https://www.paypal.com">
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success" class="pagarModal">Pagar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="pago">
+                        <fieldset class="form-group mt-2">
+                            <div class="row">
+                                <legend class="col-form-label col-sm-2 pt-0">Método de pago</legend>
+                                <div class="col-sm-10">
+                                    <select name="metodoPago" id="metodoPago">
+                                        <option value="">--Elige opcion--</option>
+                                        <option value="tarjeta">Tarjeta de credito</option>
+                                        <option value="paypal">Paypal</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        Tarjeta-->
+                    <!-- <div class="row formulario" id="tarjeta">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="nombreTarjeta">Nombre del titular de la tarjeta</label>
+                                    <input type="text" class="form-control" id="nombreTarjeta" placeholder required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="numeroTarjeta">Numero Tarjeta</label>
+                                    <input type="text" class="form-control" id="numeroTarjeta" placeholder required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <label for="caducidadTarjeta">Fecha Expiracion</label>
+                                    <input type="text" class="form-control" id="caducidadTarjeta" placeholder required>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="cvvTarjeta">CVV</label>
+                                    <input type="text" class="form-control" id="cvvTarjeta" placeholder required>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                    <!--Paypal-->
+                    <!-- <div class="row formulario mt-3" id="paypal" style="display:none;">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="mb-3">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="9GNMSCT9C3MWS">
+                                <table>
+                                    <tr>
+                                        <td><input type="hidden" name="on0" value="Pack Fiesta">Pack Fiesta</td>
+                                    </tr>
+                                    <tr>
+                                        <td><select name="os0">
+                                                <option value="Pack Bronce">Pack Bronce €99,00 EUR</option>
+                                                <option value="Pack Plata">Pack Plata €199,00 EUR</option>
+                                                <option value="Pack Oro">Pack Oro €389,00 EUR</option>
+                                            </select> </td>
+                                    </tr>
+                                </table>
+                                <input type="hidden" name="currency_code" value="EUR">
+                                <input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynowCC_LG.gif"
+                                    border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1"
+                                    height="1">
+                            </form>
+                        </div>
+                    </div> -->
+
+
+                </form>
+            </div>
+            <div class="col-md-4 order-md-2 mb-4 mt-5" id="carrito">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Tu pedido</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 class="my-0" id="productoCarrito">Aquí va tu producto seleccionado</h6>
+                            <div id="descProducto"></div>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total (EUR)</span>
+                        <strong class="precioCarrito"></strong>
+                    </li>
+                </ul>
+                <button type="submit" class="pagar btn btn-lg btn-outline-warning" data-toggle="modal" data-target="#pagoModal" disabled>Ir
+                    a método
+                    de pago</button>
+            </div>
+        </div>
+        <div class="custom-contol custom-checkbox mt-5">
+            <input type="checkbox" name="condiciones" id="condiciones">
+            <label for="condiciones">Acepto las condiciones</label>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-lg btn-block btn-outline-warning" type="submit">Enviar</button>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="container-fluid navbar-dark mt-5 footer">
+        <div class="row">
+            <div class="col-md-4 m-auto outWidth">
+                <img src="img/logo.png" id="logo-footer" title="Logo-Empresa" alt="LogoPequeño">
+            </div>
+            <div class="col-md-4 m-auto outWidth">
+                <div class="row" id="redes">
+                    <a class="col-4 fab fa-facebook-f icono-footer" href="https://es-es.facebook.com/" title="Facebook"></a>
+                    <a class="col-4 fab fa-twitter icono-footer" href="https://twitter.com/?lang=es" title="Twitter"></a>
+                    <a class="col-4 fab fa-instagram icono-footer" href="https://www.instagram.com/" title="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 m-auto text-center">
+                <p id="copyright" title="Privacidad">DayDream 2018/19 (R)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="mdb/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="mdb/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="mdb/js/bootstrap.min.js"></script>
+    <!-- Personal Design -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
