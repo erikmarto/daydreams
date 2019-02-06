@@ -155,8 +155,12 @@
 }
 
 a{
-	color: #fff !important;
+	color: #fff;
 	text-decoration: none !important;
+}
+
+.enlace{
+	color: black;
 }
 
 a:hover{
