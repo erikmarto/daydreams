@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -24,13 +24,13 @@
 
     <!-- Viewport/UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
     <!-- CSS -->
     <!-- Bootstrap core -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <!-- Personal Design -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -40,7 +40,7 @@
 <body>
     <!-- Menu con Logotipo -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="index.html" class="navbar-brand">
+        <a href="index.html" class="navbar-brand text-center">
             <img src="img/logo.png" id="logo-menu" title="Logo-Empresa" alt="LogoGrande">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -99,16 +99,16 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="montaje">Dirección de montaje: *</label>
+                        <label for="montaje">Dirección de montaje *</label>
                         <textarea id="montaje" class="form-control" rows="2" name="observaciones" required></textarea>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="fechaMontaje">Fecha de montaje: *</label>
+                            <label for="fechaMontaje">Fecha de montaje *</label>
                             <input type="date" id="montaje" class="form-control" name="montaje" required>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="fechaRecogida">Fecha de recogida: *</label>
+                            <label for="fechaRecogida">Fecha de recogida *</label>
                             <input type="date" id="recogida" class="form-control" name="recogida" required>
                         </div>
                     </div>
@@ -130,7 +130,9 @@
                                     <label for="oro" class="form-check-label">Oro&nbsp&nbsp&nbsp&nbsp380€</label>
                                 </div>
                             </div>
-                            <input type="submit" class="btn btn-lg btn-outline-warning alCarro mt-3" value="Añadir al carro">
+                            <div class="col-md-6">
+                                <input type="submit" class="btn btn-lg btn-warning alCarro mt-3" value="Añadir al carro">
+                            </div>
                         </div>
                     </fieldset>
 
@@ -139,7 +141,7 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Selecciona metodo de pago</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Selecciona método de pago</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -148,9 +150,9 @@
                                     <div class="pago">
                                         <fieldset class="form-group mt-2">
                                             <div class="row">
-                                                <div class="col-sm-10">
+                                                <div class="col-md-12">
                                                     <select name="metodoPago" id="metodoPago">
-                                                        <option value="nada">--Elige opcion--</option>
+                                                        <option>--Elige opción--</option>
                                                         <option value="tarjeta">Tarjeta de credito</option>
                                                         <option value="paypal">Paypal</option>
                                                     </select>
@@ -159,27 +161,27 @@
                                         </fieldset>
 
                                         <!-- Tarjeta -->
-                                        <div class="row formulario" id="tarjeta">
+                                        <div class="col col-md-12 formulario" id="tarjeta">
                                             <div class="row">
                                                 <div class="col-md-6 mb-3">
-                                                    <label for="nombreTarjeta">Nombre del titular</label>
+                                                    <label for="nombreTarjeta">Nombre del titular *</label>
                                                     <input type="text" class="form-control" id="nombreTarjeta"
                                                         placeholder required>
                                                 </div>
                                                 <div class="col-md-6 mb-3">
-                                                    <label for="numeroTarjeta">Numero Tarjeta</label>
+                                                    <label for="numeroTarjeta">Numero Tarjeta *</label>
                                                     <input type="text" class="form-control" id="numeroTarjeta"
                                                         placeholder required>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6 mb-3">
-                                                    <label for="caducidadTarjeta">Fecha Expiracion</label>
+                                                    <label for="caducidadTarjeta">Fecha Expiración *</label>
                                                     <input type="text" class="form-control" id="caducidadTarjeta"
                                                         placeholder required>
                                                 </div>
                                                 <div class="col-md-6 mb-3">
-                                                    <label for="cvvTarjeta">CVV</label>
+                                                    <label for="cvvTarjeta">CVV *</label>
                                                     <input type="text" class="form-control" id="cvvTarjeta" placeholder
                                                         required>
                                                 </div>
@@ -189,36 +191,42 @@
 
                                         <!-- Paypal -->
                                         <div class="row formulario mt-3" id="paypal" style="display:none;">
+
                                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"
                                                 class="mb-3">
                                                 <input type="hidden" name="cmd" value="_s-xclick">
                                                 <input type="hidden" name="hosted_button_id" value="9GNMSCT9C3MWS">
-                                                <table>
-                                                    <tr>
-                                                        <td><input type="hidden" name="on0" value="Pack Fiesta">Pack
-                                                            Fiesta</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><select name="os0" id="opcionesPaypal">
-                                                                <option value="Pack Bronce">Pack Bronce €99,00 EUR</option>
-                                                                <option value="Pack Plata">Pack Plata €199,00 EUR</option>
-                                                                <option value="Pack Oro">Pack Oro €389,00 EUR</option>
-                                                            </select> </td>
-                                                    </tr>
-                                                </table>
+                                                <div class="col-md-6">
+                                                    <table>
+                                                        <tr>
+                                                            <td><input type="hidden" name="on0" value="Pack Fiesta">Pack
+                                                                Fiesta</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <select name="os0" id="opcionesPaypal">
+                                                                    <option value="Pack Bronce">Pack Bronce €99,00 EUR</option>
+                                                                    <option value="Pack Plata">Pack Plata €199,00 EUR</option>
+                                                                    <option value="Pack Oro">Pack Oro €389,00 EUR</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
                                                 <br>
-                                                <input type="hidden" name="currency_code" value="EUR">
-                                                <input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynowCC_LG.gif"
-                                                    border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
-                                                <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif"
-                                                    width="1" height="1" href="https://www.paypal.com">
+                                                <div class="col-md-6">
+                                                    <input type="hidden" name="currency_code" value="EUR">
+                                                    <input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynowCC_LG.gif"
+                                                        border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+                                                    <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif"
+                                                        width="1" height="1" href="https://www.paypal.com">
+                                                </div>
                                             </form>
                                         </div>
                                     </div>
 
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                     <button type="button" class="btn btn-success" class="pagarModal">Pagar</button>
                                 </div>
                             </div>
@@ -309,17 +317,16 @@
                         <strong class="precioCarrito"></strong>
                     </li>
                 </ul>
-                <button type="submit" class="pagar btn btn-lg btn-outline-warning" data-toggle="modal" data-target="#pagoModal" disabled>Ir
-                    a método
-                    de pago</button>
+                <button type="submit" class="pagar btn btn-lg btn-warning" data-toggle="modal" data-target="#pagoModal"
+                    disabled>Ir a método de pago</button>
             </div>
         </div>
-        <div class="custom-contol custom-checkbox mt-5">
+        <div class="custom-contol custom-checkbox mt-3">
             <input type="checkbox" name="condiciones" id="condiciones">
             <label for="condiciones">Acepto las condiciones</label>
         </div>
         <hr class="mb-4">
-        <button class="btn btn-lg btn-block btn-outline-warning" type="submit">Enviar</button>
+        <button class="btn btn-lg btn-block btn-warning" type="submit">Enviar</button>
     </div>
 
 
@@ -340,18 +347,18 @@
         </div>
         <div class="row">
             <div class="col-md-4 m-auto text-center">
-                <p id="copyright" title="Privacidad">DayDream 2018/19 (R)</p>
+                <p id="copyright" title="Privacidad">DayDream 2018/19 (CR)</p>
             </div>
         </div>
     </div>
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script type="text/javascript" src="mdb/js/jquery-3.3.1.min.js"></script>
+    <script src="mdb/js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="mdb/js/popper.min.js"></script>
+    <script src="mdb/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="mdb/js/bootstrap.min.js"></script>
+    <script src="mdb/js/bootstrap.min.js"></script>
     <!-- Personal Design -->
     <script src="js/main.js"></script>
 </body>

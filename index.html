@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<!-- Favicons -->
@@ -23,13 +24,13 @@
 
 	<!-- Viewport/UTF-8 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
 	<!-- CSS -->
 	<!-- Bootstrap core -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 	<!-- Personal Design -->
 	<link rel="stylesheet" href="css/estilos.css">
 
@@ -39,7 +40,7 @@
 <body>
 	<!-- Menu con Logotipo -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a href="index.html" class="navbar-brand">
+		<a href="index.html" class="navbar-brand text-center">
 			<img src="img/logo.png" id="logo-menu" title="Logo-Empresa" alt="LogoGrande">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -75,13 +76,13 @@
 		<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="img/slide1.jpeg" title="Pub de Música Alternatica" alt="RunnigOfTheBulls">
+					<img src="img/slide1.jpeg" class="slider" title="Pub de Música Alternativa" alt="RunnigOfTheBulls">
 				</div>
 				<div class="carousel-item">
-					<img src="img/slide2.jpeg" title="Festival Música Rockera" alt="RockPalast">
+					<img src="img/slide2.jpeg" class="slider" title="Festival Música Electrónica" alt="EndShow">
 				</div>
 				<div class="carousel-item">
-					<img src="img/slide3.jpeg" title="Festival Música Electrónica" alt="SZIGET">
+					<img src="img/slide3.jpeg" class="slider" title="Festival Música Rock" alt="BilbaoBBk">
 				</div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -96,23 +97,27 @@
 	</div>
 
 	<!-- Descripción de la Empresa -->
-	<div class="container-fluid mt-5">
+	<div class="container-fluid back-main">
 		<div class="row">
 			<div class="col-md-4 text-center">
-				<img src="img/interrogantes.jpg" width="35%" title="Icono de Como Somos" alt="ComoSomos">
+					<script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src='https://embed.playbuzz.com/sdk.js';fjs.parentNode.insertBefore(js,fjs);}(document,'script','playbuzz-sdk'));</script>
+					<div class="playbuzz" data-id="37d2a944-8d96-467f-bfe2-19d3a9c283dd" data-show-share="false" data-show-info="false"></div>
 			</div>
 			<div class="col-md-8 text-center">
-				<h3>Por qué confiar en Nosotros</h3>
-				<div class="row mt-5">
-					<div class="col-md-4">
+				<h1>Por qué confiar en nosotros</h1>
+				<div class="col-md-12 text-center">
+					<img src="img/interrogantes.png" class="icono-como" title="Como Somos" alt="ComoSomos">
+				</div>
+				<div class="row mt-3">
+					<div class="col-md-4 back">
 						<h4>Veteranos</h4>
 						<p>Gracias a nuestros clientes llevamos mas de 10 años y sabemos lo que nos hacemos.</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 back">
 						<h4>Minimalistas</h4>
 						<p>Cuidamos hasta el ultimo detalle. Ahí es donde esta la diferencia.</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 back">
 						<h4>Imaginativos</h4>
 						<p>Damos rienda suelta a nuestra imaginacion para crear el mejor evento posible.</p>
 					</div>
@@ -121,29 +126,27 @@
 		</div>
 	</div>
 
-	<hr>
-
 	<!-- Zona de Contacto -->
 	<div class="container-fluid mt-5">
 		<div class="row">
-			<div class="col-md-4 text-center">
-				<h3>Contactanos</h3>
+			<div class="col-md-4">
+				<h3 class="text-center">Contactanos</h3>
 				<div class="row contacto">
 					<p class="fas fa-map-marker-alt icono-contacto col-md-4" title="Ubicación"></p>
-					<p class="col-md-8">Valencia c/Campbell-16</p>
+					<p class="col-md-8 contacIndex">Valencia c/Campbell-16</p>
 				</div>
 				<div class="row contacto">
 					<p class="fas fa-envelope icono-contacto col-md-4" title="E-mail"></p>
-					<p class="col-md-8">info@day-dream.com</p>
+					<p class="col-md-8 contacIndex">info@day-dream.com</p>
 				</div>
 				<div class="row contacto">
 					<p class="fas fa-phone icono-contacto col-md-4" title="Teléfono"></p>
-					<p class="col-md-8">+34 666 666 666</p>
+					<p class="col-md-8 contacIndex">+34 960 546 786</p>
 				</div>
 			</div>
 			<div class="col-md-8">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12317.39225773755!2d-0.3570695939941404!3d39.484054482261264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1543394602710"
-				 width="80%" height="420px" frameborder="0" style="border:0" allowfullscreen class="center"></iframe>
+				 style="border:0" allowfullscreen class="center"></iframe>
 			</div>
 		</div>
 	</div>
@@ -164,7 +167,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-4 m-auto text-center">
-				<p id="copyright" title="Privacidad">DayDream 2018/19 (R)</p>
+				<p id="copyright" title="Privacidad">DayDream 2018/19 (CR)</p>
 			</div>
 		</div>
 	</div>

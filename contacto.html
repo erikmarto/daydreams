@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -24,13 +24,13 @@
 
     <!-- Viewport/UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="UTF-8">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
     <!-- CSS -->
     <!-- Bootstrap core -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <!-- Personal Design -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -40,7 +40,7 @@
 <body>
     <!-- Menu con Logotipo -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="index.html" class="navbar-brand">
+        <a href="index.html" class="navbar-brand text-center">
             <img src="img/logo.png" id="logo-menu" title="Logo-Empresa" alt="LogoGrande">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
@@ -73,7 +73,8 @@
 
     <!-- Formulario Contacto -->
     <div class="container mt-5">
-        <h2>Solicitud de Presupuesto</h2>
+        <h2>Contacto</h2>
+        <h4 class="mb-3">Preguntas / Solicitar Presupuesto</h4>
         <form method="POST">
             <div class="row">
                 <div class="col col-md-6">
@@ -97,7 +98,7 @@
             </div>
             <div class="row">
                 <div class="col col-md-12">
-                    <label for="observ">Descripción: *</label>
+                    <label for="observ">Descripción *</label>
                     <textarea id="observ" class="form-control descripcion" rows="5" name="observaciones"></textarea>
                 </div>
             </div>
@@ -111,7 +112,7 @@
             </div>
             <div class="row">
                 <div class="col col-md-4">
-                    <input type="submit" class="btn btn-large btn-outline-warning enviar" name="enviar" value="Enviar">
+                    <input type="submit" class="btn btn-large btn-warning enviar" name="enviar" value="Enviar">
                 </div>
             </div>
         </form>
@@ -120,7 +121,7 @@
 
 
     <!-- Footer -->
-    <div class="container-fluid navbar-dark mt-5 footer min-footer">
+    <div class="container-fluid navbar-dark mt-5 footer">
         <div class="row">
             <div class="col-md-4 m-auto outWidth">
                 <img src="img/logo.png" id="logo-footer" title="Logo-Empresa" alt="LogoPequeño">
@@ -135,16 +136,16 @@
         </div>
         <div class="row">
             <div class="col-md-4 m-auto text-center">
-                <p id="copyright" title="Privacidad">DayDream 2018/19 (R)</p>
+                <p id="copyright" title="Privacidad">DayDream 2018/19 (CR)</p>
             </div>
         </div>
     </div>
 
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script type="text/javascript" src="mdb/js/jquery-3.3.1.min.js"></script>
+    <script src="mdb/js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="mdb/js/popper.min.js"></script>
+    <script src="mdb/js/popper.min.js"></script>
 </body>
 
 </html>

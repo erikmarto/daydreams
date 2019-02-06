@@ -1,16 +1,39 @@
-.carouser-item img{
+.purple{
+	color: #673AB7;
+}
+
+.back:hover{
+	background-color: #673AB7;
+	color: #fff;
+}
+
+.back-main{
+	padding-top: 3%;
+	padding-bottom: 3%;
+	background-color: rgba(151, 151, 151, 0.38);
+
+}
+
+.slider{
 	width: 100%;
 }
 
 /*Logos*/
 #logo-menu{
-	width: 70%;
+	width: 65%;
 	height: 20%;
 }
 
 #logo-footer{
-	width: 22%;
+	width: 20%;
 	margin-top: 3%;
+}
+
+/*Index*/
+
+.icono-como{
+	width: 15%;
+	height: 10%;
 }
 
 /*Sonorización*/
@@ -29,13 +52,9 @@
 }
 
 .img-ilum:hover{
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
 	transition:.5s;
 	box-shadow: 10px 10px 5px #888888;
-  }
+}
 
 /*Eventos*/
 .eventos-img{
@@ -52,6 +71,10 @@
 	font-size: 4em;
 }
 
+.icono-des:hover{
+	color:rgba(156, 39, 176, 0.3);
+}
+
 .gal-img{
 	width: 100%;
 }
@@ -60,14 +83,9 @@
 	height: 85%;
 }
 
-/*TODO*/
-.presupuesto{
-	border: 1px black solid;
-}
-
-.center{
-	margin: 20px auto 0 auto;
-	display: block;
+/*Alquiler*/
+.lista-alq{
+	height: 5em;
 }
 
 /*Contacto*/
@@ -77,6 +95,7 @@
 
 .icono-contacto{
 	font-size: 2.5em;
+	text-align: center;
 }
 
 /*Footer*/
@@ -84,13 +103,8 @@
 	background-color: #343a40;
 }
 
-.min-footer{ /*especial*/
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-
 #copyright{
+	font-size: 80%;
 	color: white;
 	margin-top: 1%;
     margin-bottom: 0px;
@@ -103,7 +117,7 @@
 
 .icono-footer{
 	color: white;
-	font-size: 2em;
+	font-size: 1.8em;
 }
 
 .error{
@@ -127,7 +141,65 @@
     top: 5px;
 }
 
+/*TODO*/
+.presupuesto{
+	border: 1px black solid;
+}
+
+.center{
+	margin: 20px auto 0 auto;
+	width: 80%;
+	height: 360px;
+	display: block;
+	padding-bottom: 20px;
+}
+
+a{
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+a:hover{
+	color: #efb810 !important;
+}
+
+.video{
+	width: 100%;
+	height: 315px;
+}
+
+
+@media (min-width: 1344px){
+
+	.modal-dialog{
+		margin-left: 31% !important;
+	}
+
+	.modal-content {
+		width: 120% !important;
+	}
+}
+
+/* @media (max-width: 1024px) { */
+	/*especial margin*/
+	.margin-tab-top { 
+		margin-top: 25% !important;
+	}
+
+	.margin-tab-bot {
+		margin-top: 35% !important;
+	}
+
+	.margin-tab-con{
+		margin-top: 38.5% !important;
+	}
+/* } */
+
 @media (max-width: 768px) {
+
+	.contacIndex{
+		text-align: center;
+	}
 
 	.img-sonz-bot{
 		width: 70%;
@@ -138,19 +210,24 @@
 	}
 	
 	.icono-footer{
-		font-size: 1.4em;
-	}
-
-	.prueba{
-		width: 35% !important;
+		font-size: 100%;
 	}
 	
 	.contacto{
-		margin-top:5%; 
+		margin-top: 30%; 
+	}
+
+	.eve-img{
+		padding-top: 3%;
 	}
 }
 
 @media (max-width: 576px) {
+
+	#logo-menu{
+		width: 50%;
+		height: 20%;
+	}
 
 	body{
 		font-size: 70%;
@@ -161,6 +238,14 @@
 	}
 
 	.icono-footer{
-		font-size: 150%;
+		font-size: 100%;
+	}
+
+	.modal-content {
+		margin-top: 50% !important;
+	}
+
+	.contacto{
+		margin-top: 15%; 
 	}
 }
