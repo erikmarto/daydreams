@@ -1,7 +1,23 @@
-.purple{
-	color: #673AB7;
+/*
+--------------------
+IMPORTANTE (no tocar)
+
+ajustar footer y body a la página
+--------------------
+*/
+html, body {
+  height: 100%;
 }
 
+#content-body {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+  }
+/*---------------------------*/
+
+/*Principal*/
 .back:hover{
 	background-color: #673AB7;
 	color: #fff;
@@ -11,7 +27,6 @@
 	padding-top: 3%;
 	padding-bottom: 3%;
 	background-color: rgba(151, 151, 151, 0.38);
-
 }
 
 .slider{
@@ -72,7 +87,7 @@
 }
 
 .icono-des:hover{
-	color:rgba(156, 39, 176, 0.3);
+	color:purple;
 }
 
 .gal-img{
@@ -86,6 +101,10 @@
 /*Alquiler*/
 .lista-alq{
 	height: 5em;
+}
+
+.card-deck {
+	margin-top: 3em;
 }
 
 /*Contacto*/
@@ -120,6 +139,44 @@
 	font-size: 1.8em;
 }
 
+
+
+/*TODO*/
+.presupuesto{
+	border: 1px black solid;
+}
+
+.center{
+	margin: 20px auto 0 auto;
+	width: 80%;
+	height: 360px;
+	display: block;
+	padding-bottom: 20px;
+}
+
+a{
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.a-btn{
+	font-weight: bold !important;
+	color: black !important;
+}
+
+.a-btn:hover{
+	color: purple !important;
+}
+
+a:hover{
+	color: #efb810 !important;
+}
+
+.video{
+	width: 100%;
+	height: 315px;
+}
+
 .error{
     background-color: #BC1010;
     padding: 6px 12px;
@@ -141,34 +198,6 @@
     top: 5px;
 }
 
-/*TODO*/
-.presupuesto{
-	border: 1px black solid;
-}
-
-.center{
-	margin: 20px auto 0 auto;
-	width: 80%;
-	height: 360px;
-	display: block;
-	padding-bottom: 20px;
-}
-
-a{
-	color: #fff !important;
-	text-decoration: none !important;
-}
-
-a:hover{
-	color: #efb810 !important;
-}
-
-.video{
-	width: 100%;
-	height: 315px;
-}
-
-
 @media (min-width: 1344px){
 
 	.modal-dialog{
@@ -179,21 +208,6 @@ a:hover{
 		width: 120% !important;
 	}
 }
-
-/* @media (max-width: 1024px) { */
-	/*especial margin*/
-	.margin-tab-top { 
-		margin-top: 25% !important;
-	}
-
-	.margin-tab-bot {
-		margin-top: 35% !important;
-	}
-
-	.margin-tab-con{
-		margin-top: 38.5% !important;
-	}
-/* } */
 
 @media (max-width: 768px) {
 

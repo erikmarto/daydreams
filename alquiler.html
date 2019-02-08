@@ -31,6 +31,8 @@
     <!-- CSS -->
     <!-- Bootstrap core -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="mdb/css/mdb.css">
     <!-- Personal Design -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -38,126 +40,128 @@
 </head>
 
 <body>
-    <!-- Menu con Logotipo -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="index.html" class="navbar-brand text-center">
-            <img src="img/logo.png" id="logo-menu" title="Logo-Empresa" alt="LogoGrande">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="sonorizacion.html" class="nav-link">Sonorización</a>
-                </li>
-                <li class="nav-item">
-                    <a href="iluminacion.html" class="nav-link">Iluminación</a>
-                </li>
-                <li class="nav-item">
-                    <a href="eventos.html" class="nav-link">Eventos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="estructuras.html" class="nav-link">Estructuras</a>
-                </li>
-                <li class="nav-item">
-                    <a href="alquiler.html" class="nav-link">Alquiler</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contacto.html" class="nav-link">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div id="content-body">
+        <!-- Menu con Logotipo -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="index.html" class="navbar-brand text-center">
+                <img src="img/logo.png" id="logo-menu" title="Logo-Empresa" alt="LogoGrande">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="sonorizacion.html" class="nav-link">Sonorización</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="iluminacion.html" class="nav-link">Iluminación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="eventos.html" class="nav-link">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="estructuras.html" class="nav-link">Estructuras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="alquiler.html" class="nav-link">Alquiler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-    <div class="mt-3">
-        <h1 class="text-center">Alquiler</h1>
-    </div>
+        <div class="mt-3">
+            <h1 class="text-center">Alquiler</h1>
+        </div>
 
-    <!-- Solicitar Presupuesto -->
-    <div class="container mt-5">
-        <div class="card">
-            <div class="card-head">
-                <h4 class="card-title text-center mt-5">PRESUPUESTO</h4>
+        <!-- Solicitar Presupuesto -->
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-head">
+                    <h4 class="card-title text-center mt-5">PRESUPUESTO</h4>
+                </div>
+            </div>
+            <div class="card-deck mb-3 text-center">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h1 class="card-title">Iluminación</h1>
+                        <ul class="list-unstyled mt-3 mb-4 lista-alq">
+                            <li>CABEZAS MÓVILES</li>
+                            <li>FOCOS FIJOS</li>
+                            <li>LASERES</li>
+                        </ul>
+                        <a type="button" class="btn btn-large btn-block btn-warning a-btn" href="contacto.html">Solicitar</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h1 class="card-title">Sonorización</h1>
+                        <ul class="list-unstyled mt-3 mb-4 lista-alq">
+                            <li>LINE ARRAY</li>
+                            <li>ETAPAS (de potencia)</li>
+                            <li>MONITORES</li>
+                        </ul>
+                        <a type="button" class="btn btn-large btn-block btn-warning a-btn" href="contacto.html">Solicitar</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h1 class="card-title">Estructuras</h1>
+                        <ul class="list-unstyled mt-3 mb-4 lista-alq">
+                            <li>TRUST (1-2-3 metros)</li>
+                            <li>TARIMAS (con patas de distintas alturas)</li>
+                            <li>BASES (de sujección)</li>
+                        </ul>
+                        <a type="button" class="btn btn-large btn-block btn-warning a-btn" href="contacto.html">Solicitar</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card-deck mb-3 text-center">
-            <div class="card mb-4 shadow-sm">
-                <div class="card-body">
-                    <h1 class="card-title">Iluminación</h1>
-                    <ul class="list-unstyled mt-3 mb-4 lista-alq">
-                        <li>CABEZAS MÓVILES</li>
-                        <li>FOCOS FIJOS</li>
-                        <li>LASERES</li>
-                    </ul>
-                    <a href="contacto.html"><button class="btn btn-large btn-block btn-warning">Solicitar</button></a>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-body">
-                    <h1 class="card-title">Sonorización</h1>
-                    <ul class="list-unstyled mt-3 mb-4 lista-alq">
-                        <li>LINE ARRAY</li>
-                        <li>ETAPAS (de potencia)</li>
-                        <li>MONITORES</li>
-                    </ul>
-                    <a href="contacto.html"><button class="btn btn-large btn-block btn-warning">Solicitar</button></a>
-                </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-body">
-                    <h1 class="card-title">Estructuras</h1>
-                    <ul class="list-unstyled mt-3 mb-4 lista-alq">
-                        <li>TRUST (1-2-3 metros)</li>
-                        <li>TARIMAS (con patas de distintas alturas)</li>
-                        <li>BASES (de sujección)</li>
-                    </ul>
-                    <a href="contacto.html"><button class="btn btn-large btn-block btn-warning">Solicitar</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Pack Fiesta -->
-    <div class="container mt-3">
-        <div class="card">
-            <div class="card-head">
-                <h4 class="card-title text-center mt-5">PACK FIESTA</h4>
-            </div>
-        </div>
-        <div class="card-deck mb-3 text-center">
-            <div class="card mb-4 shadow-sm">
-                <div class="card-body">
-                    <h1 class="card-title">Bronce</h1>
-                    <ul class="list-unstyled mt-3 mb-4 lista-alq">
-                        <li>PACK (altavoces)</li>
-                        <li>REPRODUCTOR</li>
-                    </ul>
-                    <a href="solAlquiler.html"><button class="btn btn-large btn-block btn-warning">Alquilar</button></a>
+        <!-- Pack Fiesta -->
+        <div class="container mt-3">
+            <div class="card">
+                <div class="card-head">
+                    <h4 class="card-title text-center mt-5">PACK FIESTA</h4>
                 </div>
             </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-body">
-                    <h1 class="card-title">Plata</h1>
-                    <ul class="list-unstyled mt-3 mb-4 lista-alq">
-                        <li>PACK (altavoces)</li>
-                        <li>REPRODUCTOR (dj)</li>
-                        <li>EFECTOS (iluminación)</li>
-                    </ul>
-                    <a href="solAlquiler.html"><button class="btn btn-large btn-block btn-warning">Alquilar</button></a>
+            <div class="card-deck mb-3 text-center ">
+                <div class="card mb-4 shadow-sm warm-flame-gradient color-block">
+                    <div class="card-body">
+                        <h1 class="card-title">Bronce</h1>
+                        <ul class="list-unstyled mt-3 mb-4 lista-alq">
+                            <li>PACK (altavoces)</li>
+                            <li>REPRODUCTOR</li>
+                        </ul>
+                        <a type="button" class="btn btn-large btn-block btn-outline-warning a-btn" href="solAlquiler.html">Alquilar</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card mb-4 shadow-sm">
-                <div class="card-body">
-                    <h1 class="card-title">Oro</h1>
-                    <ul class="list-unstyled mt-3 mb-4 lista-alq">
-                        <li>PACK (altavoces)</li>
-                        <li>REPRODUCTOR (dj)</li>
-                        <li>EFECTOS (iluminación)</li>
-                        <li>MÁQUINA (humo)</li>
-                    </ul>
-                    <a href="solAlquiler.html"><button class="btn btn-large btn-block btn-warning">Alquilar</button></a>
+                <div class="card mb-4 shadow-sm heavy-rain-gradient color-block">
+                    <div class="card-body">
+                        <h1 class="card-title">Plata</h1>
+                        <ul class="list-unstyled mt-3 mb-4 lista-alq">
+                            <li>PACK (altavoces)</li>
+                            <li>REPRODUCTOR (dj)</li>
+                            <li>EFECTOS (iluminación)</li>
+                        </ul>
+                        <a type="button" class="btn btn-large btn-block btn-warning a-btn" href="solAlquiler.html">Alquilar</a>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm sunny-morning-gradient color-block">
+                    <div class="card-body">
+                        <h1 class="card-title">Oro</h1>
+                        <ul class="list-unstyled mt-3 mb-4 lista-alq">
+                            <li>PACK (altavoces)</li>
+                            <li>REPRODUCTOR (dj)</li>
+                            <li>EFECTOS (iluminación)</li>
+                            <li>MÁQUINA (humo)</li>
+                        </ul>
+                        <a type="button" class="btn btn-large btn-block btn-warning a-btn" href="solAlquiler.html">Alquilar</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -171,9 +175,12 @@
             </div>
             <div class="col-md-4 m-auto outWidth">
                 <div class="row" id="redes">
-                    <a class="col-4 fab fa-facebook-f icono-footer" href="https://es-es.facebook.com/" title="Facebook"></a>
-                    <a class="col-4 fab fa-twitter icono-footer" href="https://twitter.com/?lang=es" title="Twitter"></a>
-                    <a class="col-4 fab fa-instagram icono-footer" href="https://www.instagram.com/" title="Instagram"></a>
+                    <a class="col-4 fab fa-facebook-f icono-footer" href="https://es-es.facebook.com/"
+                        title="Facebook"></a>
+                    <a class="col-4 fab fa-twitter icono-footer" href="https://twitter.com/?lang=es"
+                        title="Twitter"></a>
+                    <a class="col-4 fab fa-instagram icono-footer" href="https://www.instagram.com/"
+                        title="Instagram"></a>
                 </div>
             </div>
         </div>
@@ -191,6 +198,8 @@
     <script src="mdb/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="mdb/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script src="mdb/js/mdb.min.js"></script>
 </body>
 
 </html>
