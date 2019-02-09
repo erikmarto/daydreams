@@ -31,6 +31,8 @@
     <!-- CSS -->
     <!-- Bootstrap core -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="mdb/css/mdb.css">
     <!-- Personal Design -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -57,10 +59,10 @@
                         <a href="iluminacion.html" class="nav-link">Iluminación</a>
                     </li>
                     <li class="nav-item">
-                        <a href="eventos.html" class="nav-link">Eventos</a>
+                        <a href="estructuras.html" class="nav-link">Estructuras</a>
                     </li>
                     <li class="nav-item">
-                        <a href="estructuras.html" class="nav-link">Estructuras</a>
+                        <a href="eventos.html" class="nav-link">Eventos</a>
                     </li>
                     <li class="nav-item">
                         <a href="alquiler.html" class="nav-link">Alquiler</a>
@@ -76,34 +78,35 @@
         <div class="container mt-5">
             <h2>Contacto</h2>
             <h4 class="mb-3">Preguntas / Solicitar Presupuesto</h4>
-            <form method="POST">
-                <div class="row">
-                    <div class="col col-md-6">
+            <hr>
+            <form class="margin-mvl" method="POST">
+                <div class="row mb-3">
+                    <div class="col col-md-6 ">
                         <label for="nombre">Nombre *</label>
-                        <input type="text" id="nombre" class="form-control nombre" name="nombre" value="Nombre">
+                        <input type="text" id="nombre" class="form-control nombre" name="nombre">
                     </div>
                     <div class="col col-md-6">
                         <label for="email">Apellidos *</label>
-                        <input id="apellidos" class="form-control apellidos" name="apellidos" value="Apellidos">
+                        <input id="apellidos" class="form-control apellidos" name="apellidos">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row margin-mvl mb-3">
                     <div class="col col-md-6">
                         <label for="email">Email *</label>
-                        <input id="email" class="form-control email" name="email" value="Email">
+                        <input id="email" class="form-control email" name="email">
                     </div>
                     <div class="col col-md-6">
                         <label for="email">Repetir Email *</label>
-                        <input id="email2" class="form-control email" name="email" value="Repetir Email">
+                        <input id="email2" class="form-control email" name="email2">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row margin-mvl mb-3">
                     <div class="col col-md-12">
                         <label for="observ">Descripción *</label>
                         <textarea id="observ" class="form-control descripcion" rows="5" name="observaciones"></textarea>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row margin-mvl mb-3">
                     <div class="col col-md-4">
                         <input type="checkbox" id="condiciones" name="condiciones">
                         <label for="condiciones">
@@ -111,9 +114,10 @@
                         </label>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row margin-mvl mb-3">
                     <div class="col col-md-4">
-                        <input type="submit" class="btn btn-large btn-warning enviar" name="enviar" value="Enviar">
+                        <input type="submit" class="btn btn-large btn-warning a-btn enviar" name="enviar"
+                            value="Enviar">
                     </div>
                 </div>
             </form>
@@ -149,6 +153,8 @@
     <script src="mdb/js/jquery-3.3.1.min.js"></script>
     <!-- Bootstrap tooltips -->
     <script src="mdb/js/popper.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script src="mdb/js/mdb.min.js"></script>
 </body>
 
 </html>

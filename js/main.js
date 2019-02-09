@@ -30,6 +30,7 @@ $(document).ready(function () {
                 $('.precioCarrito').replaceWith('<strong class="precioCarrito">' + precio + ' €</strong>');
                 $('#opcionesPaypal > option[value="Pack Bronce"]').attr('selected', 'selected');
                 $('.pagar').removeAttr("disabled");
+                $('#producto').removeClass('back2').removeClass('back3').addClass('back1');
                 break;
             case 'plata':
                 precio = "199";
@@ -38,6 +39,7 @@ $(document).ready(function () {
                 $('.precioCarrito').replaceWith('<strong class="precioCarrito">' + precio + ' €</strong>');
                 $('#opcionesPaypal > option[value="Pack Plata"]').attr('selected', 'selected');
                 $('.pagar').removeAttr("disabled");
+                $('#producto').removeClass('back1').removeClass('back3').addClass('back2');
                 break;
             case 'oro':
                 precio = "380";
@@ -46,6 +48,7 @@ $(document).ready(function () {
                 $('.precioCarrito').replaceWith('<strong class="precioCarrito">' + precio + ' €</strong>');
                 $('#opcionesPaypal > option[value="Pack Oro"]').attr('selected', 'selected');
                 $('.pagar').removeAttr("disabled");
+                $('#producto').removeClass('back1').removeClass('back2').addClass('back3');
                 break;
         }
         e.preventDefault();

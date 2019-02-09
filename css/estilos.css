@@ -6,16 +6,27 @@ ajustar footer y body a la página
 --------------------
 */
 html, body {
-  height: 100%;
+  height: 97%;
 }
 
 #content-body {
 	min-height: 100%;
-	height: auto !important;
+/* 	height: auto !important;
 	height: 100%;
-	margin: 0 auto;
-  }
+	margin: 0 auto; */
+}
 /*---------------------------*/
+
+/*Logos*/
+#logo-menu{
+	width: 65%;
+	height: 20%;
+}
+
+#logo-footer{
+	width: 20%;
+	margin-top: 3%;
+}
 
 /*Principal*/
 .back:hover{
@@ -32,19 +43,6 @@ html, body {
 .slider{
 	width: 100%;
 }
-
-/*Logos*/
-#logo-menu{
-	width: 65%;
-	height: 20%;
-}
-
-#logo-footer{
-	width: 20%;
-	margin-top: 3%;
-}
-
-/*Index*/
 
 .icono-como{
 	width: 15%;
@@ -66,11 +64,6 @@ html, body {
 	height: 70%;
 }
 
-.img-ilum:hover{
-	transition:.5s;
-	box-shadow: 10px 10px 5px #888888;
-}
-
 /*Eventos*/
 .eventos-img{
 	width: 100%;
@@ -87,7 +80,7 @@ html, body {
 }
 
 .icono-des:hover{
-	color:purple;
+	color:#673AB7;
 }
 
 .gal-img{
@@ -101,6 +94,18 @@ html, body {
 /*Alquiler*/
 .lista-alq{
 	height: 5em;
+}
+
+.back1{
+	background-image: url("../img/alquiler/bronce.jpg");
+}
+
+.back2{
+	background-image: url("../img/alquiler/plata.jpg");
+}
+
+.back3{
+	background-image: url("../img/alquiler/oro.jpg");
 }
 
 .card-deck {
@@ -159,17 +164,17 @@ a{
 	text-decoration: none !important;
 }
 
+a:hover{
+	color: #efb810 !important;
+}
+
 .a-btn{
 	font-weight: bold !important;
 	color: black !important;
 }
 
 .a-btn:hover{
-	color: purple !important;
-}
-
-a:hover{
-	color: #efb810 !important;
+	color: #673AB7 !important;
 }
 
 .video{
@@ -178,39 +183,27 @@ a:hover{
 }
 
 .error{
-    background-color: #BC1010;
-    padding: 6px 12px;
-    border-radius: 4px;
-    color: white;
-    font-weight: bold;
-    margin-left: 16px;
-    margin-top: 6px;
-    position: absolute;
+  background-color: #BC1010;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  margin-left: 16px;
+  margin-top: 6px;
+  position: absolute;
 }
 .error:before{ /* Este es un truco para crear una flechita */
-    content: '';
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-right: 8px solid #BC1010;
-    border-left: 8px solid transparent;
-    left: -16px;
-    position: absolute;
-    top: 5px;
-}
-
-@media (min-width: 1344px){
-
-	.modal-dialog{
-		margin-left: 31% !important;
-	}
-
-	.modal-content {
-		width: 120% !important;
-	}
+  content: '';
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #BC1010;
+  border-left: 8px solid transparent;
+  left: -16px;
+  position: absolute;
+  top: 5px;
 }
 
 @media (max-width: 768px) {
-
 	.contacIndex{
 		text-align: center;
 	}
@@ -230,14 +223,16 @@ a:hover{
 	.contacto{
 		margin-top: 30%; 
 	}
+}
 
-	.eve-img{
-		padding-top: 3%;
+@media (min-width: 768px) and (max-width: 1024px) {
+	.margin-mvl{
+		margin-top: 6rem !important;
 	}
 }
 
-@media (max-width: 576px) {
 
+@media (max-width: 576px) {
 	#logo-menu{
 		width: 50%;
 		height: 20%;
@@ -245,6 +240,10 @@ a:hover{
 
 	body{
 		font-size: 70%;
+	}
+
+	.eve-text{
+		margin-top: 60% !important;
 	}
 
 	.icono-contacto{

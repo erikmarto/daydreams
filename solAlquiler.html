@@ -31,6 +31,8 @@
     <!-- CSS -->
     <!-- Bootstrap core -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="mdb/css/mdb.css">
     <!-- Personal Design -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -57,10 +59,10 @@
                         <a href="iluminacion.html" class="nav-link">Iluminación</a>
                     </li>
                     <li class="nav-item">
-                        <a href="eventos.html" class="nav-link">Eventos</a>
+                        <a href="estructuras.html" class="nav-link">Estructuras</a>
                     </li>
                     <li class="nav-item">
-                        <a href="estructuras.html" class="nav-link">Estructuras</a>
+                        <a href="eventos.html" class="nav-link">Eventos</a>
                     </li>
                     <li class="nav-item">
                         <a href="alquiler.html" class="nav-link">Alquiler</a>
@@ -75,10 +77,11 @@
         <!-- Formulario de alquiler Pack Fiesta -->
         <div class="container mt-5">
             <h2>Alquilar Pack Fiesta</h2>
+            <h4 class="mb-3">Datos de facturación</h4>
+            <hr>
             <div class="row">
                 <div class="col-md-8 order-md-1">
-                    <h4 class="mb-3">Datos de facturacion</h4>
-                    <form action="#" class="needs-validation" novalidate>
+                    <form action="#" class="needs-validation margin-mvl" novalidate>
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="nombre">Nombre *</label>
@@ -101,13 +104,17 @@
                         </div>
                         <div class="mb-3">
                             <label for="montaje">Dirección de montaje *</label>
-                            <textarea id="direccionMontaje" class="form-control" rows="2" name="observaciones"
-                                required></textarea>
+                            <input id="direccionMontaje" class="form-control" rows="2" name="direccion" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="observ">Descripción *</label>
+                            <textarea id="observ" class="form-control descripcion" rows="3"
+                                name="observaciones"></textarea>
                         </div>
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label for="fechaMontaje">Fecha de montaje *</label>
-                                <input type="date" id="fechaMontaje" class="form-control" name="montaje" required>
+                                <label for="fechaEntrega">Fecha de montaje *</label>
+                                <input type="date" id="entrega" class="form-control" name="entrega" required>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="fechaRecogida">Fecha de recogida *</label>
@@ -136,7 +143,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="submit" class="btn btn-lg btn-warning alCarro mt-3"
+                                    <input type="submit" class="btn btn-block btn-warning a-btn alCarro mt-3"
                                         value="Añadir al carro">
                                 </div>
                             </div>
@@ -193,7 +200,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-success"
+                                                    <button type="button" class="btn btn-block a-btn btn-success"
                                                         class="pagarModal">Pagar</button>
                                                 </div>
                                             </div>
@@ -313,12 +320,12 @@
 
                     </form>
                 </div>
-                <div class="col-md-4 order-md-2 mb-4 mt-5" id="carrito">
+                <div class="col-md-4 order-md-2 mb-4 mt-5 margin-mvl" id="carrito">
                     <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-muted">Tu pedido</span>
                     </h4>
                     <ul class="list-group mb-3">
-                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <li id="producto" class="list-group-item d-flex justify-content-between lh-condensed">
                             <div>
                                 <h6 class="my-0" id="productoCarrito">Aquí va tu producto seleccionado</h6>
                                 <div id="descProducto"></div>
@@ -329,7 +336,7 @@
                             <strong class="precioCarrito"></strong>
                         </li>
                     </ul>
-                    <button type="submit" class="pagar btn btn-lg btn-warning" data-toggle="modal"
+                    <button type="submit" class="pagar btn btn-block a-btn btn-warning" data-toggle="modal"
                         data-target="#pagoModal" disabled>Ir a método de pago</button>
                 </div>
             </div>
@@ -338,7 +345,7 @@
                 <label for="condiciones">Acepto las condiciones</label>
             </div>
             <hr class="mb-4">
-            <button class="btn btn-lg btn-block btn-warning" type="submit">Enviar</button>
+            <button class="btn btn-block a-btn btn-warning" type="submit">Enviar</button>
         </div>
     </div>
 
@@ -375,6 +382,8 @@
     <script src="mdb/js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="mdb/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script src="mdb/js/mdb.min.js"></script>
     <!-- Personal Design -->
     <script src="js/main.js"></script>
 </body>
