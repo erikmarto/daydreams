@@ -25,7 +25,7 @@ $(document).ready(function () {
         switch (producto) {
             case 'bronce':
                 precio = "99";
-                $('#productoCarrito').replaceWith('<h6 class="my-0" id="productoCarrito">Has seleccionado el pack fiesta ' + producto + '.</h6>');
+                $('#productoCarrito').replaceWith('<h6 id="productoCarrito">Has seleccionado el pack fiesta ' + producto + '.</h6>');
                 $('#descProducto').replaceWith('<div id="descProducto"><ul class="list-unstyled mt-3 mb-4"><li>PACK DE ALTAVOCES</li><li>REPRODUCTOR</li></ul></div>');
                 $('.precioCarrito').replaceWith('<strong class="precioCarrito">' + precio + ' €</strong>');
                 $('#opcionesPaypal > option[value="Pack Bronce"]').attr('selected', 'selected');
@@ -34,7 +34,7 @@ $(document).ready(function () {
                 break;
             case 'plata':
                 precio = "199";
-                $('#productoCarrito').replaceWith('<h6 class="my-0" id="productoCarrito">Has seleccionado el pack fiesta ' + producto + '.</h6>');
+                $('#productoCarrito').replaceWith('<h6 id="productoCarrito">Has seleccionado el pack fiesta ' + producto + '.</h6>');
                 $('#descProducto').replaceWith('<div id="descProducto"><ul class="list-unstyled mt-3 mb-4"><li>PACK DE ALTAVOCES</li><li>REPRODUCTOR</li><li>EFECTOS DE ILUMINACIÓN</li></ul></div>');
                 $('.precioCarrito').replaceWith('<strong class="precioCarrito">' + precio + ' €</strong>');
                 $('#opcionesPaypal > option[value="Pack Plata"]').attr('selected', 'selected');
@@ -43,7 +43,7 @@ $(document).ready(function () {
                 break;
             case 'oro':
                 precio = "380";
-                $('#productoCarrito').replaceWith('<h6 class="my-0" id="productoCarrito">Has seleccionado el pack fiesta ' + producto + '.</h6>');
+                $('#productoCarrito').replaceWith('<h6 id="productoCarrito">Has seleccionado el pack fiesta ' + producto + '.</h6>');
                 $('#descProducto').replaceWith('<div id="descProducto"><ul class="list-unstyled mt-3 mb-4"><li>PACK DE ALTAVOCES</li><li>REPRODUCTOR DJ</li><li>EFECTOS DE ILUMINACIÓN</li><li>MÁQUINA DE HUMO</li></ul></div>');
                 $('.precioCarrito').replaceWith('<strong class="precioCarrito">' + precio + ' €</strong>');
                 $('#opcionesPaypal > option[value="Pack Oro"]').attr('selected', 'selected');

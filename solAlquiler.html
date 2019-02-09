@@ -81,7 +81,7 @@
             <hr>
             <div class="row">
                 <div class="col-md-8 order-md-1">
-                    <form action="#" class="needs-validation margin-mvl" novalidate>
+                    <div action="#" class="needs-validation margin-mvl">
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="nombre">Nombre *</label>
@@ -104,7 +104,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="montaje">Dirección de montaje *</label>
-                            <input id="direccionMontaje" class="form-control" rows="2" name="direccion" required>
+                            <input id="direccionMontaje" class="form-control" name="direccion" required>
                         </div>
                         <div class="mb-3">
                             <label for="observ">Descripción *</label>
@@ -124,8 +124,8 @@
                         <!-- Seleccionar pack fiesta -->
                         <fieldset class="form-group mt-2">
                             <div class="row">
-                                <legend class="col-form-label col-sm-2 pt-0">Elige tu pack fiesta *</legend>
-                                <div class="col-sm-10" id="productos">
+                                <h5 class="col-md-4">Elige tu pack fiesta *</h5>
+                                <div class="col-md-6" id="productos">
                                     <div class="form-check">
                                         <input type="radio" name="packFiesta" id="bronce" value="bronce"
                                             class="form-check-input">
@@ -142,6 +142,8 @@
                                         <label for="oro" class="form-check-label">Oro --> 380€</label>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-md-6">
                                     <input type="submit" class="btn btn-block btn-warning a-btn alCarro mt-3"
                                         value="Añadir al carro">
@@ -200,8 +202,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-block a-btn btn-success"
-                                                        class="pagarModal">Pagar</button>
+                                                    <button type="button"
+                                                        class="btn btn-block a-btn btn-success pagarModal">Pagar
+                                                    </button>
                                                 </div>
                                             </div>
 
@@ -212,37 +215,42 @@
                                                     <input type="hidden" name="cmd" value="_s-xclick" />
                                                     <input type="hidden" name="hosted_button_id"
                                                         value="9GNMSCT9C3MWS" />
-                                                    <div class="col-md-6">
-                                                        <table>
-                                                            <tr>
-                                                                <td><input type="hidden" name="on0"
-                                                                        value="Pack Fiesta" />Pack
-                                                                    Fiesta</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    <select name="os0" id="opcionesPaypal">
-                                                                        <option value="Pack Bronce">Pack Bronce €99,00
-                                                                            EUR</option>
-                                                                        <option value="Pack Plata">Pack Plata €199,00
-                                                                            EUR</option>
-                                                                        <option value="Pack Oro">Pack Oro €389,00 EUR
-                                                                        </option>
-                                                                    </select>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
-                                                    <br>
-                                                    <div class="col-md-6">
-                                                        <input type="hidden" name="currency_code" value="EUR" />
-                                                        <input type="image"
-                                                            src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynowCC_LG.gif"
-                                                            name="submit"
-                                                            alt="PayPal, la forma rápida y segura de pagar en Internet." />
-                                                        <img alt="paypal"
-                                                            src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif"
-                                                            href="https://www.paypal.com">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <table>
+                                                                    <tr>
+                                                                        <td><input type="hidden" name="on0"
+                                                                                value="Pack Fiesta" />Pack
+                                                                            Fiesta</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <select name="os0" id="opcionesPaypal">
+                                                                                <option value="Pack Bronce">Pack Bronce
+                                                                                    €99,00
+                                                                                    EUR</option>
+                                                                                <option value="Pack Plata">Pack Plata
+                                                                                    €199,00
+                                                                                    EUR</option>
+                                                                                <option value="Pack Oro">Pack Oro
+                                                                                    €389,00
+                                                                                    EUR
+                                                                                </option>
+                                                                            </select>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                            <br>
+                                                            <div class="col-md-6">
+                                                                <input type="hidden" name="currency_code" value="EUR" />
+                                                                <input type="image"
+                                                                    src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_buynowCC_LG.gif"
+                                                                    name="submit"
+                                                                    alt="PayPal, la forma rápida y segura de pagar en Internet." />
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </form>
                                             </div>
@@ -316,9 +324,7 @@
                             </form>
                         </div>
                     </div> -->
-
-
-                    </form>
+                    </div>
                 </div>
                 <div class="col-md-4 order-md-2 mb-4 mt-5 margin-mvl" id="carrito">
                     <h4 class="d-flex justify-content-between align-items-center mb-3">
