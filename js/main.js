@@ -3,21 +3,6 @@ $(document).ready(function () {
         $('.formulario').hide();
         $('#' + this.value).show();
     });
-
-    /* $('#metodoPago').change(function(){
-        $('.pagarModal').hide();
-        $('select option:selected').each(function(){
-            var metodo = "";
-            metodo = $(this).val();
-            if(metodo !== "paypal"){
-                console.log("o");
-                $('.pagarModal').show();
-            }
-        });
-        
-    }) */
-
-
     $('input[type="submit"]').click(function (e) {
         let precio = "";
         var producto = $('input[name="packFiesta"]:checked').val();
