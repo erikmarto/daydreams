@@ -52,12 +52,6 @@ html, body {
 	color: #fff;
 }
 
-.back-main{
-	padding-top: 3%;
-	padding-bottom: 3%;
-	background-color: rgba(151, 151, 151, 0.38);
-}
-
 .center-map{
 	margin: 20px auto 0 auto;
 	width: 80%;
