@@ -47,11 +47,6 @@ html, body {
 	height: 100%;
 }
 
-.back:hover{
-	background-color: #673AB7;
-	color: #fff;
-}
-
 .center-map{
 	margin: 20px auto 0 auto;
 	width: 80%;
